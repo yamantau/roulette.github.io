@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ddd;
+}
+body {
+    background-color: #353535;
+    position: relative;
+}
+body:hover{
+    cursor: default;
+}
+    *::selection {
+        background: transparent;
+    }
+
+.progressBar {
+    height: 20px;
+    width: 860px;
+    background-color: #2a2a2a;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+.front {
+    background-color: #5dffba;
+    height: 20px;
+    width: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+.wrapper {
+    width: 860px;
+    height: 100px;
+    border: solid #666;
+    border-width: 2px 0 2px 0;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    background-color: #2a2a2a;
+    position: relative;
+}
+main > div > section > div {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 1.3em;
+}
+.black {
+    background-color: #353535;
+}
+.red {
+    background-color: #fe6f5e;
+}
+.green {
+    background-color: #5dffba;
+    color:  #aaa;
+}
+.main{
+    width: 25000px;
+    position:relative;
+}
+
+i {
+    height: 10px;
+    width: 10px;
+    border: solid #666;
+    border-width: 0 5px 5px 0;
+    position: absolute;
+}
+.strelki{
+    position: relative;
+    left: 50%;
+}
+.up{
+    transform: rotate(45deg);
+    left: -5px;
+    top: -105px;
+}
+.down{
+    transform: rotate(-135deg);
+    left: -5px;
+    top: -5px;
+}
+.last {
+    margin:  auto;
+    width: 860px;
+}
+#lastNumbers {
+    height: 40px;
+    width: 355px;
+    background-color: #2a2a2a;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+}
+#lastNumbersHelp {
+    height: 40px;
+    width: 25000px;
+}
+#lastNumbers > #lastNumbersHelp > * {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0 5px 10px 0;
+}
+.calculat {
+    width: 860px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+.ic{
+    display:inline-block
+}
+
+.balanceValue {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 140px;
+    border-radius: 5px;
+    background-color: #353535;
+    font-size: 1.1em;
+    margin-left: 5px;
+}
+.currentBet {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 140px;
+    border-radius: 5px;
+    background-color: #353535;
+    font-size: 1.1em;
+}
+
+.allIn {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #fe6f5e;
+    font-size: 1.1em;
+    
+}
+    .allIn:hover {
+        display: inline-block;
+        height: 30px;
+        margin-top: 5px;
+        padding-top: 4px;
+        text-align: center;
+        width: 50px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        background-color: #ffbcb4;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        transition-property: all;
+    }
+.clear {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #353535;
+    font-size: 1.1em;
+}
+.clear:hover{
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #353535;
+    font-size: 1.1em;
+    background-color: #555;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+.ten, .hundred, .thousend, .thousendk, .multiply, .divide {
+    display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #353535;
+}
+.ten:hover, .hundred:hover, .thousend:hover, .thousendk:hover, .multiply:hover, .divide:hover{
+     display: inline-block;
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 4px;
+    text-align: center;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #555;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+.divide{
+    margin-right: 5px;
+}
+/* .calc > div > button {
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #353535;
+    width: 50px;
+    margin-top: 1px;
+}*/
+.bets {
+    width: 860px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sect1, .sect2, .sect3{
+    width: 270px;
+}
+.betRed, .betBlack, .betGreen {
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    font-size: 1.5em;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+.betRed {
+    color: #fe6f5e;
+    border: solid #fe6f5e;
+    border-width: 3px 0 3px 0;
+}
+
+.betBlack {
+    border: solid #666;
+    border-width: 3px 0 3px 0;
+    color: #666;
+}
+
+.betGreen {
+    color: #5dffba;
+    border: solid #5dffba;
+    border-width: 3px 0 3px 0;
+}
+.betRed:hover {
+    background-color: #fe6f5e;
+    color: #ddd;
+    cursor: pointer;
+}
+.betBlack:hover {
+    background-color: #666;
+    color: #ddd;
+    cursor: pointer;
+}
+.betGreen:hover {
+    background-color: #5dffba;
+    color: #aaa;
+    cursor: pointer;
+}
+
+
+
+
+
+
